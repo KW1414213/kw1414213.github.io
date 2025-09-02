@@ -11,8 +11,8 @@
 ### What is Flutter?
 - Definition:
 - Why is it useful?
-
----
+A framework made by Google for building apps that work on web, Android, and iOS - with one codebase.
+  Uses the Dart programming language.
 
 ### Key Terms and Definitions
 
@@ -236,3 +236,39 @@ Blockquotes = Notes/Tips
 Collapsible = Hide/Show detail
 
 Keep it simple, consistent, and clear.
+
+
+Layout in Flutter:
+
+Row - Horizontal Layout
+
+Column - Vertical Layout
+
+Container - wraps content with padding, margin, or color
+
+Center - centers its child
+
+Padding - adds space around a widget
+
+Image.network - displays images from a URL
+
+Text - displays text
+
+
+Term: Widget(Basic building block of a flutter app. Everything is a widget.) Example from App: Text, Image, Container, Column
+
+Term: MaterialApp(The root of the app. Sets up routes and themes.) Example from app: Found in main.dart
+
+Term: Scaffold(Provides basic visual layout - like a header, body, floating button) Example from App: Each screen uses it
+
+Term: Named routes(Predefined paths to navigate between screens.) Example from App: '/',,'/page2','/page3', etc.
+
+Term: Navigator(Manages screen transitions) Example from App: Navigator .pushNamed(context,  ' /pages2');
+
+Term: StatefulWidget(A widget that can change over time) Example from App: Used in MyHomePage()
+
+Term: StatelessWidget(A widget that doesn't change) Example from App: Most of the screen files
+
+Term: AppBar(Top navigation bar) Example from App: Title of each page appears here
+
+Term: main()(The function that runs the app) Example from App: Found in main.dart
