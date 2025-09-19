@@ -90,14 +90,14 @@ A framework made by Google for building apps that work on web, Android, and iOS 
 |   Stateless Widget   | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` | Your homescreen generally never changes, about page of a company |  |
 |   Stateful Widget   | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` | ball on the screen of a game, character running around, you click a button and change the background of the game.  |  |
 |   Navigator   | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
-|      | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |  |  |
-|      | Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
-|      | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |  |  |
-|      | This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
-|      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
-|      | Required in every widget class to describe what to show. | `build` |  |  |
-|      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
-|      | A keyword used to pass a value to the parent widget. | `super.key` |  |  |
+|   Padding   | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |Example: The board in the classroom has little blank spaces around the posters  |  |
+|   Center   | Aligns content in the center of the screen or container. | `Center(child: ...)` | You go to google home page and google logo is in the center |  |
+|   Wrap   | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |  |  |
+|   @override   | This marks a method as one that’s replacing a method in a parent class. | `@override` | You're overriding their bill method and doing your own |  |
+|   build(in list twice)   | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` | printing a pdf of something |  |
+|   BuildContext   | Required in every widget class to describe what to show. | `build` | it can be awkward to jump into a conversation without knowing the context |  |
+|   super.key   | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` | sending an email to your teacher with what class period you're in |  |
+|   const   | A keyword used to pass a value to the parent widget. | `super.key` | once you have put an image or logo on a shirt, thats not changing |  |
 |      | A keyword that means the value won't change and is set once. | `const` |  |  |
 
 
