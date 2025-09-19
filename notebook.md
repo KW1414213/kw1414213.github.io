@@ -53,9 +53,9 @@ A framework made by Google for building apps that work on web, Android, and iOS 
 
 | Term | Definition | Base Structure / Syntax | Real Life Example | App Example |
 |------|------------|--------------------------|-------------------|-------------|
-|   Variable    | A named container used to store a value that may change. | `var x = 5;` | Age | height |
-|      | A fixed value that cannot change once set. | `const PI = 3.14;` |  |  |
-|   Data Type   | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` |If you're small and you get an xl shirt its not gonna fit, not efficient. TYPE of variable.  |  |
+|   Variable    | A named container used to store a value that may change. | `var x = 5;` | Age | height | main.dart title: 'TSA Portfolio',
+|      | A fixed value that cannot change once set. | `const PI = 3.14;` |  |  | MyPortfolioApp extends StatelessWidget {
+|   Data Type   | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` |If you're small and you get an xl shirt its not gonna fit, not efficient. TYPE of variable.  |  | main.dart, bool,  debugShowCheckedModeBanner: false,
 |   String   | A sequence of characters used to represent words or text. | `"Hello World"` |In social media, you see the words on the search engions, comments, descriptions, etc. Collection of characters. (Anything that stores info that can change.)  |  |
 |   Integer   | Whole number values. | `int age = 16;` |Counting your steaks in apps like "duolingo  |  |
 |   Double   | Number values with decimals. | `double age = 16.2;` | walking and running in games use decimals in that transition to make it smooth |  |
@@ -79,7 +79,11 @@ A framework made by Google for building apps that work on web, Android, and iOS 
 
 |  Main    | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` | You turn on your phone/computer |  |
 |   MaterialApp   | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` | People with MySpace set up their background, how many friends they wanted, etc. |  |
-|   Scaffold   | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |Any template. Templates for job applications  |  |
+main.dart, return MaterialApp(
+    debugShowCheckedModeBanner: false,
+      title: 'TSA Portfolio',
+      theme: ThemeData(
+|   Scaffold   | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` | in home.dart, return Scaffold(  body: Center( | Templates for job applications  |  |
 |   Column   | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` | Good for when you have a small vertical screen, pictures stacked on top of each other |  |
 |   Row   | A widget that shows things side-by-side. | `Row(...)` | Example: Definition and everything to the right of definition is the definition |  |
 |   Container   | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` | Example: The board in the classroom with the bell schedule and all the class info on it |  |
